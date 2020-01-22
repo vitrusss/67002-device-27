@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Булат Шарафутдинов](https://up.htmlacademy.ru/htmlcss/27/user/67002).
-* Наставник: `Дмитрий (sench) Железцов`.
+* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
