@@ -8,73 +8,251 @@
 
 <body>
     <header>
-        <a>
-            <img src="img/logo.svg" alt="Логотип интернет-магазина Девайс">
+        <a class="logo">
+            <img src="img/logo.svg" alt="Логотип интернет-магазина Девайс" />
         </a>
-        <!-- input "Поиск" -->
-        <button type="button">
-            Войти
-        </button>
-        <button type="button">
-            Сравнить
-        </button>
-        <button type="button">
-            Корзина
-        </button>
-        <button type="button">
-            Каталог товаров
-        </button>
-        <ul>
-            <li>
-                <a href="delivery.html">
-                    Доставка
-                </a>
-            </li>
-            <li>
-                <a href="warranty.html">
-                    Гарантия
-                </a>
-            </li>
-            <li>
-                <a href="contacts.html">
-                    Контакты
-                </a>
-            </li>
-        </ul>
+        <div>
+            <!-- input "Поиск" -->
+            <button type="button">
+                Каталог товаров
+            </button>
+        </div>
+        <div>
+            <button type="button">
+                Войти
+            </button>
+            <button type="button">
+                Сравнить
+            </button>
+            <button type="button">
+                Корзина
+            </button>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="delivery.html">
+                        Доставка
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="warranty.html">
+                        Гарантия
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="contacts.html">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
         <h1>
             Интернет-магазин "Девайс"
         </h1>
-        <section>
+        <section class="best-product">
+            <h2>
+                Лучший товар
+            </h2>
+            <img src="" alt="Лучшая селфи-палка" class="best-product-img" />
+            <ul class="advatages-list">
+                <li class="advantage-item">
+                    <div class="best-product-title">
+                        Делай селфи, как Бен Стиллер!
+                    </div>
+                    <p class="best-product-description">
+                        Самая длинная палка для селфи доступна в нашем магазине. Восемь <strong>(Восемь, Карл!)</strong> метров длиной и весом всего 5 килограмм.
+                    </p>
+                </li>
+                <li class="advantage-item">
+                    <div class="best-product-title">
+                        <!--  -->
+                    </div>
+                    <p class="best-product-description">
+                        <!--  -->
+                    </p>
+                </li>
+                <li class="advantage-item">
+                    <div class="best-product-title">
+                        <!--  -->
+                    </div>
+                    <p class="best-product-description">
+                        <!--  -->
+                    </p>
+                </li>
+            </ul>
+            <ul class="best-product-specifications">
+                <li class="best-product-specifications-item">
+                    <span>
+                        8,5 м
+                    </span>
+                    <span>
+                        Длина палки
+                    </span>
+                </li>
+                <li class="best-product-specifications-item">
+                    <span>
+                        5 кг
+                    </span>
+                    <span>
+                        Вес палки
+                    </span>
+                </li>
+                <li class="best-product-specifications-item">
+                    <span>
+                        Карбон
+                    </span>
+                    <span>
+                        Материал
+                    </span>
+                </li>
+            </ul>
+        </section>
+        <section class="categories">
+            <h2>
+                Категории
+            </h2>
+            <ul class="categories-list">
+                <li class="category-item">
+                    <div class="category-img-wrap">
+                        <img src="" alt="Виртуальные очки" />
+                    </div>
+                    <h4>
+                        Виртуальная реальность
+                    </h4>
+                </li>
+                <li class="category-item">
+                    <div class="category-img-wrap">
+                        <img src="" alt="Монопод" />
+                    </div>
+                    <h4>
+                        Моноподы для селфи
+                    </h4>
+                </li>
+                <li class="category-item">
+                    <div class="category-img-wrap">
+                        <img src="" alt="Экшн-камера" />
+                    </div>
+                    <h4>
+                        Экшн-камеры
+                    </h4>
+                </li>
+                <li class="category-item">
+                    <div class="category-img-wrap">
+                        <img src="" alt="Фитнес-браслеты" />
+                    </div>
+                    <h4>
+                        Фитнес-браслеты
+                    </h4>
+                </li>
+                <li class="category-item">
+                    <div class="category-img-wrap">
+                        <img src="" alt="Умные часы" />
+                    </div>
+                    <h4>
+                        Умные часы
+                    </h4>
+                </li>
+                <li class="category-item">
+                    <div class="category-img-wrap">
+                        <img src="" alt="Квадрокоптер" />
+                    </div>
+                    <h4>
+                        Квадрокоптеры
+                    </h4>
+                </li>
+            </ul>
+        </section>
+        <section class="services">
+            <ul class="services-list">
+                <li class="service-item">
+                    <button type="button" class="button">
+                        Доставка
+                    </button>
+                    <div class="delivery">
+                        <h2>
+                            Доставка
+                        </h2>
+                        <p>
+                            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на ваш этаж.
+                        </p>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <button type="button" class="button">
+                        Гарантия
+                    </button>
+                    <div class="warranty">
+                        <h2>
+                            Гарантия
+                        </h2>
+                        <p>
+                            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на ваш этаж.
+                        </p>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <button type="button" class="button">
+                        Кредит
+                    </button>
+                    <div class="credit">
+                        <h2>
+                            Кредит
+                        </h2>
+                        <p>
+                            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на ваш этаж.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="brands">
+            <h2>
+                Бренды
+            </h2>
+            <ul class="brands-list">
+                <li class="brand-item">
+                    <img src="" alt="djl" />
+                </li>
+                <li class="brand-item">
+                    <img src="" alt="spgadgets" />
+                </li>
+                <li class="brand-item">
+                    <img src="" alt="gopro" />
+                </li>
+                <li class="brand-item">
+                    <img src="" alt="vive" />
+                </li>
+            </ul>
+        </section>
+        <section class="about-us">
             <h2>
                 О нас
             </h2>
             <p>
                 Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
             </p>
-            <div>
+            <div class="transport-companies-info">
                 <p>
                     Мы можем доставить ваш товар в самые отдаленные точки России! Device работает со многими транспортными компаниями:
                 </p>
-                <ul>
-                    <li>
+                <ul class="transport-companies-list">
+                    <li class="transport-company-item">
                         Деловые линии
                     </li>
-                    <li>
+                    <li class="transport-company-item">
                         Автотрейдинг
                     </li>
-                    <li>
+                    <li class="transport-company-item">
                         ЖелДорЭкспедиция
                     </li>
                 </ul>
-                <!-- Подробнее о нас -->
-                <a href="about-us.html">
-                  Подробнее о нас
+                <a href="about-us.html" class="button">
+                    Подробнее о нас
                 </a>
             </div>
         </section>
-        <section>
+        <section class="contacts">
             <h2>
                 Контакты
             </h2>
@@ -82,53 +260,55 @@
                 Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.
             </p>
             <!-- Карта -->
-            <button type="button">
+            <button type="button" class="button">
                 Напишите нам
             </button>
         </section>
     </main>
     <footer>
-        <a>
-            <img src="img/logo2.svg" alt="Логотип интернет-магазина Девайс">
+        <a class="logo footer-logo">
+            <img src="img/logo2.svg" alt="Логотип интернет-магазина Девайс" />
         </a>
-        <button type="button">
-            Войти
-        </button>
-        <button type="button">
-            Сравнить
-        </button>
-        <button type="button">
-            Корзина
-        </button>
-        <span>
+        <div>
+            <button type="button">
+                Войти
+            </button>
+            <button type="button">
+                Сравнить
+            </button>
+            <button type="button">
+                Корзина
+            </button>
+        </div>
+        <span class="address">
             г. Москва, ул. Строителей, 15
         </span>
-        <ul>
-            <li>
+        <ul class="menu footer-menu">
+            <li class="menu-item">
                 <a href="delivery.html">
                     Доставка
                 </a>
             </li>
-            <li>
+            <li class="menu-item">
                 <a href="warranty.html">
                     Гарантия
                 </a>
             </li>
-            <li>
+            <li class="menu-item">
                 <a href="contacts.html">
                     Контакты
                 </a>
             </li>
         </ul>
         <a href="tel:74954959595">+7 495-95-95</a>
-        <ul>
-            <li>
+        <ul class="social-networks-list">
+            <li class="social-network-item">
                 <a href="facebook.com"></a>
             </li>
-            <li>
+            <li class="social-network-item">
                 <a href="instagram.com"></a>
             </li>
-            <li>
+            <li class="social-network-item">
                 <a href="twitter.com"></a>
             </li>
         </ul>
