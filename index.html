@@ -12,9 +12,24 @@
             <img src="img/logo.png" alt="Логотип интернет-магазина Девайс" />
         </a>
         <div>
-            <!-- input "Поиск" -->
+            <form action="#" method="POST" class="serch">
+                <button type="submit" class="search"></button>
+                <p>
+                    <label for="search-field">Поиск по сайту</label>
+                    <input type="text" id="search-field" name="search-field" placeholder="Поиск по сайту" />
+                </p>
+            </form>
             <a href="catalog.html">
                 Каталог товаров
+                <button type="button" class="catalog-expand"></button>
+                <ul class="catalog-list">
+                    <li class="catalog-item">Виртуальная реальность</li>
+                    <li class="catalog-item">Моноподы для селфи</li>
+                    <li class="catalog-item">Экшн-камеры</li>
+                    <li class="catalog-item">Фитнес-браслеты</li>
+                    <li class="catalog-item">Умные часы</li>
+                    <li class="catalog-item">Квадрокоптеры</li>
+                </ul>
             </a>
         </div>
         <div>
@@ -265,7 +280,10 @@
             <p>
                 Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.
             </p>
-            <!-- Карта -->
+            <div class="map-wrap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947355!2d37.527429315890004!3d55.68703400453003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1581267993448!5m2!1sru!2sru"
+                    width="560" height="220" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
             <button type="button" class="button">
                 Напишите нам
             </button>
@@ -319,6 +337,33 @@
             </li>
         </ul>
     </footer>
+    <div class="popup-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947355!2d37.527429315890004!3d55.68703400453003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1581267993448!5m2!1sru!2sru"
+            width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <button type="button" class="popup-close"></button>
+    </div>
+    <div class="popup-write-us">
+        <form action="#" method="POST" class="form-write-us">
+            <p>
+                <label for="user-name">
+                    Ваше имя:
+                </label>
+                <input type="text" id="user-name" name="name" placeholder="Имя Фамилия" />
+            </p>
+            <p>
+                <label for="user-mail">
+                    Ваш e-mail:
+                </label>
+                <input type="text" id="user-mail" name="e-mail" placeholder="email@example.com" />
+            </p>
+            <p>
+                <label for="message">Текст письма</label>
+                <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+            </p>
+            <button type="submit">Отправить</button>
+            <button type="button" class="popup-close"></button>
+        </form>
+    </div>
 </body>
 
 </html>
